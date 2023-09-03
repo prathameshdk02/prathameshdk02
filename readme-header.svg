@@ -28,7 +28,7 @@
 						width: 0%;
 					}
 					100%{
-						width: 64%;
+						width: 63%;
 					}
 				}
 
@@ -80,7 +80,7 @@
 					}
 					100%{
 						opacity: 1;
-						transform: translateX(0) rotate(-120deg);
+						transform: translateX(0) rotate(-180deg);
 					}
 				}
 
@@ -101,7 +101,7 @@
 						opacity: 0;
 					}
 					100%{
-						transform: translateY(0) rotate(-120deg);
+						transform: translateY(0) rotate(-180deg);
 						opacity: 1;
 					}
 				}
@@ -124,7 +124,7 @@
 					overflow: hidden;
 					border-right: none;
 					white-space: nowrap;
-					animation: type 3.5s 2.5s forwards, blink 2.5s 2s forwards 5;
+					animation: type 3.5s 2.5s forwards, blink 1s 2s forwards 5;
 				}
 
 				.slide-up{
@@ -143,11 +143,9 @@
 					font-family: "Segoe UI";
 					margin: 0;
 					width: 100%;
-					min-width: 50rem;
-					min-height: 14.875rem;
-					background: linear-gradient(-45deg, rgb(13,27,23,0.97), #0d1117, rgb(13,27,23,0.97), #0d1117, rgb(13,27,23,0.97));
+					background: linear-gradient(-45deg, rgb(13,27,23,0.95), #0d1117, rgb(13,27,23,0.95), #0d1117, rgb(13,27,23,0.95));
 					background-size: 600% 400%;
-					animation: gradientBackground 10s ease infinite;
+					animation: gradientBackground 12s ease infinite;
 					color: white;
 					text-align: left;
 					padding: 3rem 2rem 4rem;
@@ -157,18 +155,18 @@
 
 				.header-greet{
 					font-weight: 200;
-					font-size: 1.5em;
+					font-size: 1.5rem;
 				}
 
 				.header-name{
 					margin-top: -2px;
 					font-weight: 900;
-					font-size: 3em;
+					font-size: 3rem;
 				}
 
 				.header-prof{
 					font-weight: 400;
-					font-size: 1.5em;
+					font-size: 1.5rem;
 				}
 
 				<!-- Hexa Shapes -->
