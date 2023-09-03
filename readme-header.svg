@@ -139,7 +139,6 @@
 				}
 
 				<!-- Header Container -->
-
 				.header {
 					font-family: "Segoe UI";
 					margin: 0;
@@ -211,8 +210,8 @@
 				.hexa-2{
 					<!-- opacity: 0; -->
 					position: absolute;
+					bottom: 56.8%;
 					right: 9.7%;
-					top: 13%;
 					<!-- animation: hexa2Animation 2s 3.7s forwards; -->
 				}
 
@@ -227,7 +226,7 @@
 				.hexa-4{
 					<!-- opacity: 0; -->
 					position: absolute;
-					top: 13%;
+					bottom: 56.8%;
 					right: -7.6%;
 					<!-- animation: hexa4Animation 2s 3.4s forwards; -->
 				}
