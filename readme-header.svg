@@ -144,6 +144,7 @@
 					font-family: "Segoe UI";
 					margin: 0;
 					width: 100%;
+					min-width: 50rem;
 					background: linear-gradient(-45deg, rgb(13,27,23,0.97), #0d1117, rgb(13,27,23,0.97), #0d1117, rgb(13,27,23,0.97));
 					background-size: 600% 400%;
 					animation: gradientBackground 10s ease infinite;
