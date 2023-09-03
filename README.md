@@ -15,7 +15,16 @@
   </a>
 
   <a href="https://stackoverflow.com/users/21097030/prathamesh-kadve">
-    <img alt="StackOverflow" src="https://img.shields.io/badge/StackOverflow-%232d2d2d?style=flat&logo=stackoverflow" height="25px">
+    <img alt="Stack Overflow" src="https://img.shields.io/badge/Stack_Overflow-%232d2d2d?style=flat&logo=stackoverflow" height="25px">
   </a>
+
+  <a href="https://dev.to/prathameshdk02">
+    <img alt="Dev.To" src="https://img.shields.io/badge/_Dev.To_-%23000000?style=flat&logo=devdotto" height="25px">
+  </a>
+
+  <a href="https://auth.geeksforgeeks.org/user/prathameshdk02">
+    <img alt="Geeks For Geeks" src="https://img.shields.io/badge/Geeks For Geeks-%232f8d46?style=flat&logo=geeksforgeeks&logoColor=white" height="25px">
+  </a>
+  
 </div>
 <hr />
