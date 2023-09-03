@@ -9,6 +9,7 @@
 					font-family: "Segoe UI";
 				}
 
+				<!-- Animation Keyframes -->
 				@keyframes gradientBackground {
 					0% {
 						background-position: 0% 50%;
@@ -72,6 +73,52 @@
 					}
 				}
 
+				@keyframes hexa4Animation{
+					0%{
+						transform: translateX(100px) rotate(0deg);
+						opacity: 0;
+					}
+					100%{
+						opacity: 1;
+						transform: translateX(0) rotate(-120deg);
+					}
+				}
+
+				@keyframes hexa1Animation{
+					0%{
+						transform: translateX(-100px) rotate(0deg);
+						opacity: 0;
+					}
+					100%{
+						opacity: 1;
+						transform: translateX(0) rotate(120deg);
+					}
+				}
+
+				@keyframes hexa3Animation{
+					0%{
+						transform: translateY(100px) rotate(0deg);
+						opacity: 0;
+					}
+					100%{
+						transform: translateY(0) rotate(-120deg);
+						opacity: 1;
+					}
+				}
+
+				@keyframes hexa2Animation{
+					0%{
+						transform: translateY(-100px) rotate(0deg);
+						opacity: 0;
+					}
+					100%{
+						transform: translateY(0) rotate(120deg);
+						opacity: 1;
+					}
+				}
+
+				<!-- Animation Classes -->
+
 				.typed-out{
 					width: 0;
 					overflow: hidden;
@@ -91,6 +138,8 @@
 					opacity: 0;
 				}
 
+				<!-- Header Container -->
+
 				.header {
 					font-family: "Segoe UI";
 					margin: 0;
@@ -101,6 +150,8 @@
 					color: white;
 					text-align: left;
 					padding: 3rem 2rem 4rem;
+					position: relative;
+					overflow: hidden;
 				}
 
 				.header-greet{
@@ -119,12 +170,77 @@
 					font-size: 1.5em;
 				}
 
+				<!-- Hexa Shapes -->
+				.hexa{
+					position: absolute;
+					width: 8rem;
+					height: 4.5rem;
+				}
+
+				.hexa::before, .hexa::after{
+					content: "";
+					width: 8rem;
+					height: 4.5rem;
+					position: absolute;		
+				}
+
+				.hexa,
+				.hexa::before,
+				.hexa::after{
+					background: linear-gradient(-45deg, rgb(0, 119, 182), rgb(43, 192, 246) , rgb(0, 119, 182));
+				}
+
+				.hexa::before{
+					transform: rotate(60deg);
+				}
+
+				.hexa::after{
+					transform: rotate(-60deg);
+				}
+
+				.hexa-1{
+					opacity: 0;
+					position: absolute;
+					right: 146px;
+					bottom: 16px;
+					animation: hexa1Animation 2s 3.5s forwards;
+				}
+
+				.hexa-2{
+					opacity: 0;
+					position: absolute;
+					right: 77px;
+					top: 31px;
+					animation: hexa2Animation 2s 3.7s forwards;
+				}
+
+				.hexa-3{
+					opacity: 0;
+					position: absolute;
+					bottom: 16px;
+					right: 9px;
+					animation: hexa3Animation 2s 3.6s forwards;
+				}
+
+				.hexa-4{
+					opacity: 0;
+					position: absolute;
+					top: 31px;
+					right: -60px;
+					animation: hexa4Animation 2s 3.4s forwards;
+				}
+
+
 			</style>
 
 			<div class="header">
 					<h3 class="header-greet shake">Hello I'm</h3>
 					<h1 class="header-name typed-out">Prathamesh Kadve</h1>
 					<h3 class="header-prof slide-up">Full Stack Web Developer</h3>
+					<div class="hexa hexa-1"></div>
+					<div class="hexa hexa-2"></div>
+					<div class="hexa hexa-3"></div>
+					<div class="hexa hexa-4"></div>
 			</div>
 		</div>
 	</foreignObject>
