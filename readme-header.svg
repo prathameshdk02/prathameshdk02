@@ -43,12 +43,45 @@
 					}
 				}
 
+				@keyframes slideUp{
+					0%{
+						opacity: 0;
+						transform: translateY(30px);
+					}
+					100%{
+						opacity: 1;
+						transform: translateY(0);
+					}
+				}
+
+				@keyframes shake{
+					0%{
+						transform: rotate(6deg);
+					}
+					50%{
+						transform: rotate(-6deg);
+					}
+					100%{
+						transform: rotate(0deg);
+					}
+				}
+
 				.typed-out{
 					width: 0;
 					overflow: hidden;
-					border-right: .15em solid white;
+					border-right: none;
 					white-space: nowrap;
-					animation: type 5s 1.2s forwards, blink 1s forwards 10;
+					animation: type 3.5s 1.5s forwards, blink 2.5s 1s forwards 5;
+				}
+
+				.slide-up{
+					animation: slideUp 2s 2.5s forwards;
+					opacity: 0;
+				}
+
+				.shake{
+					display: inline-block;
+					animation: shake 1.5s forwards;
 				}
 
 				.header {
@@ -82,9 +115,9 @@
 			</style>
 
 			<div class="header">
-					<h3 class="header-greet">Hello I'm</h3>
+					<h3 class="header-greet shake">Hello I'm</h3>
 					<h1 class="header-name typed-out">Prathamesh Kadve</h1>
-					<h3 class="header-prof">Full Stack Web Developer</h3>
+					<h3 class="header-prof slide-up">Full Stack Web Developer</h3>
 			</div>
 		</div>
 	</foreignObject>
