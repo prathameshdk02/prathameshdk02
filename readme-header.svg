@@ -56,12 +56,18 @@
 
 				@keyframes shake{
 					0%{
-						transform: rotate(6deg);
+						opacity: 0;
 					}
 					50%{
+						opacity: 1;
+						transform: rotate(6deg);
+					}
+					75%{
+						opacity: 1;
 						transform: rotate(-6deg);
 					}
 					100%{
+						opacity: 1;
 						transform: rotate(0deg);
 					}
 				}
@@ -71,17 +77,18 @@
 					overflow: hidden;
 					border-right: none;
 					white-space: nowrap;
-					animation: type 3.5s 1.5s forwards, blink 2.5s 1s forwards 5;
+					animation: type 3.5s 2.5s forwards, blink 2.5s 2s forwards 5;
 				}
 
 				.slide-up{
-					animation: slideUp 2s 2.5s forwards;
+					animation: slideUp 2s 3.5s forwards;
 					opacity: 0;
 				}
 
 				.shake{
 					display: inline-block;
-					animation: shake 1.5s forwards;
+					animation: shake 1.5s 0.5s forwards;
+					opacity: 0;
 				}
 
 				.header {
@@ -90,7 +97,7 @@
 					width: 100%;
 					background: linear-gradient(-45deg, rgb(13,27,23,0.97), #0d1117, rgb(13,27,23,0.97), #0d1117, rgb(13,27,23,0.97));
 					background-size: 600% 400%;
-					animation: gradientBackground 8s ease infinite;
+					animation: gradientBackground 10s ease infinite;
 					color: white;
 					text-align: left;
 					padding: 3rem 2rem 4rem;
