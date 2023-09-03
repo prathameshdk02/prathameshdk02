@@ -201,32 +201,32 @@
 				.hexa-1{
 					opacity: 0;
 					position: absolute;
-					right: 146px;
-					bottom: 16px;
+					right: 9.125rem;
+					bottom: 1rem;
 					animation: hexa1Animation 2s 3.5s forwards;
 				}
 
 				.hexa-2{
 					opacity: 0;
 					position: absolute;
-					right: 77px;
-					top: 31px;
+					right: 4.813rem;
+					top: 0.938rem;
 					animation: hexa2Animation 2s 3.7s forwards;
 				}
 
 				.hexa-3{
 					opacity: 0;
 					position: absolute;
-					bottom: 16px;
-					right: 9px;
+					bottom: 1rem;
+					right: 0.563rem;
 					animation: hexa3Animation 2s 3.6s forwards;
 				}
 
 				.hexa-4{
 					opacity: 0;
 					position: absolute;
-					top: 31px;
-					right: -60px;
+					top: 1.938rem;
+					right: -3.75rem;
 					animation: hexa4Animation 2s 3.4s forwards;
 				}
 
