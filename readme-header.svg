@@ -197,38 +197,37 @@
 					transform: rotate(-60deg);
 				}
 
-				.hexa-1{
-					opacity: 0;
+				.hexa-1,
+				.hexa-2,
+				.hexa-3,
+				.hexa-4{
 					position: absolute;
-					right: 18.5%;
+					opacity: 0;
+				}
+
+				.hexa-1{
 					bottom: 6.5%;
+					right: 18.5%;
 					animation: hexa1Animation 2s 3.5s forwards;
 				}
 
 				.hexa-2{
-					opacity: 0;
-					position: absolute;
 					bottom: 56.8%;
 					right: 9.7%;
 					animation: hexa2Animation 2s 3.7s forwards;
 				}
 
 				.hexa-3{
-					opacity: 0;
-					position: absolute;
 					bottom: 6.5%;
 					right: 1.1%;
 					animation: hexa3Animation 2s 3.6s forwards;
 				}
 
 				.hexa-4{
-					opacity: 0;
-					position: absolute;
 					bottom: 56.8%;
 					right: -7.6%;
 					animation: hexa4Animation 2s 3.4s forwards;
 				}
-				<!-- Animations ? -->
 
 			</style>
 
