@@ -36,6 +36,6 @@
 
 <hr />
 
-<div class="header-section">
-  <h2>About Me</h2>
+<div id="header" align="left">
+  <img src="https://github.com/prathameshdk02/prathameshdk02/blob/main/readme-aboutMe.svg">
 </div>
