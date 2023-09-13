@@ -1,0 +1,124 @@
+<svg fill="none" viewBox="0 0 200 150" width="200" height="150" xmlns="http://www.w3.org/2000/svg">
+	<foreignObject width="100%" height="100%">
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<style>
+				*{
+					margin:0;
+					padding:0;
+					box-sizing: border-box;
+					font-family: "Segoe UI";
+				}
+
+				<!-- Animation Keyframes -->
+				@keyframes gradientBackground {
+					0% {
+						background-position: 0% 50%;
+					}
+					50% {
+						background-position: 100% 50%;
+					}
+					100% {
+						background-position: 0% 50%;
+					}
+				}
+
+				@keyframes type{
+					0%{
+						visibility: none;
+						width: 0%;
+					}
+					100%{
+						width: 68%;
+					}
+				}
+
+				@keyframes blink{
+					0%{
+						border-right: none;
+					}
+					50%{
+						border-right: 0.1rem solid white;
+					}
+					100%{
+						border-right: none;
+					}
+				}
+
+				@keyframes appearRotate{
+					0%{
+						opacity: 0;
+						transform: rotate(-90deg) scale(2);
+					}
+					100%{
+						opacity: 1;
+						transform: rotate(0) scale(1);
+					}
+				}
+
+				@keyframes emphasize{
+					0%{
+						transform: translateX(0);
+					}
+					50%{
+						transform: translateX(-5px);
+					}
+					100%{
+						transform: translateX(0);
+					}
+				}
+
+				.typed-out{
+					width: 0;
+					overflow: hidden;
+					border-right: none;
+					white-space: nowrap;
+					animation: type 2.5s forwards, blink 1s forwards 5;
+				}
+
+				.appear-rotate{
+					animation: appearRotate 1s 1.5s forwards, emphasize 1s 2.5s infinite;
+				}
+
+				<!-- Header Container -->
+				.hero-banner {
+					font-family: "Segoe UI";
+					width: 100%;
+					background: linear-gradient(-45deg, rgb(13,27,23,0.95), #0d1117, rgb(13,27,23,0.95), #0d1117, rgb(13,27,23,0.95));
+					background-size: 600% 400%;
+					animation: gradientBackground 12s ease infinite;
+					color: white;
+					text-align: left;
+					position: relative;
+					overflow: hidden;
+					display: flex;
+					justify-content: flex-start;
+					align-items: center;
+					padding: 0.7rem 1.2rem;
+				}
+
+				.heading{
+					font-size: 1.4rem;
+					font-weight: 500;
+				}
+
+				.heading-me{
+					font-weight: 300;
+				}
+
+				.heading-img{
+					opacity: 0;
+					width: 1.6rem;
+					height: auto;
+					fill: #18a0da;
+					stroke: 1.6rem;
+					margin-right: 0.5rem;
+				}
+			</style>
+
+			<div class="hero-banner">
+				<svg xmlns="http://www.w3.org/2000/svg" class="heading-img appear-rotate" height="1.5rem" viewBox="0 0 512 512"> <path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/></svg>
+				<h2 class="heading typed-out">About <span class="heading-me">Me...</span></h2>
+			</div>
+		</div>
+	</foreignObject>
+</svg>
