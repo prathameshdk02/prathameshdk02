@@ -34,8 +34,7 @@
   
 </div>
 
-<hr />
-
-<!-- <div id="header" align="left">
+<!-- <hr />
+<div id="header" align="left">
   <img src="https://github.com/prathameshdk02/prathameshdk02/blob/main/readme-aboutMe.svg">
 </div> -->
