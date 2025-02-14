@@ -34,7 +34,9 @@
   
 </div>
 
-<!-- <hr />
-<div id="header" align="left">
-  <img src="https://github.com/prathameshdk02/prathameshdk02/blob/main/readme-aboutMe.svg">
-</div> -->
+<div align="center">
+  <a href="https://prathameshdk02.netlify.app/" target="_blank">
+    <img alt="Portfolio Website" src="https://img.shields.io/badge/Visit_Portfolio_Website-000000?style=flat&logo=paddle&logoColor=white" height="30px">
+  </a>
+</div>
+
